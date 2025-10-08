@@ -1,0 +1,63 @@
+<!--
+ Design HTML 5 Page Using CSS which display the following Box ( use Box Model Property 
+in CSS) 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        .outer-box {
+            width: 600px;
+            height: 400px;
+            background-color: gold;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+
+        .inner-box {
+            width: 350px;
+            height: 200px;
+            background-color: maroon;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-box {
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            border: 1px solid black;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>CSS Box Model Property</h2>
+
+<div class="outer-box">
+    <div class="inner-box">
+        <div class="text-box">T.Y.B.Sc(Comp.Sci)</div>
+        <div class="text-box">Academic Year 2021-22</div>
+    </div>
+</div>
+
+</body>
+</html>

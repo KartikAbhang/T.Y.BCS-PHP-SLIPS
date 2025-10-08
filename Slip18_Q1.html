@@ -1,0 +1,50 @@
+<!--
+.Design HTML 5 Page Using CSS Which Displays the following Navigation Bar.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+     
+        .navbar {
+            background-color: #ccc;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 18px;
+        }
+
+        .navbar a.active {
+            background-color: gray;
+            color: white;
+        }
+
+        .navbar a:hover {
+            background-color: #999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">Java</a>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+</div>
+
+</body>
+</html>

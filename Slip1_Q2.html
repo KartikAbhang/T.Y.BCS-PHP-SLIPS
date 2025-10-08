@@ -1,0 +1,101 @@
+<!--
+.Write the HTML code for generating the form as shown below. Apply the internal CSS to 
+following form to change the font size of the heading to 6pt and change the color to red and 
+also change the background color to yellow.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-size: 6pt;
+            color: red;
+            text-decoration: underline;
+        }
+        form {
+            background-color: aqua;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            resize: none;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 20px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: limegreen;
+        }
+        input[type="reset"] {
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h2><b>Project Management</b></h2>
+    <form>
+        <label>Project Name</label>
+        <input type="text" placeholder="project name">
+
+        <label>Assigned to</label>
+        <select>
+            <option>Er. Rohan Deshmukh</option>
+            <option>Er. Sneha Patil</option>
+            <option>Er. Aarav Sharma</option>
+        </select>
+
+        <label>Start Date</label>
+        <input type="date">
+
+        <label>End Date</label>
+        <input type="date">
+
+        <label>Priority</label>
+        <input type="radio" name="priority"> High
+        <input type="radio" name="priority"> Average
+        <input type="radio" name="priority"> Low
+
+        <label>Description</label>
+        <textarea rows="3"></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
